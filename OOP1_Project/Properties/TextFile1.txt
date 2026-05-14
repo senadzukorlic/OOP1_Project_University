@@ -1,0 +1,28 @@
+MiniMoodleApp
+│
+├── Forms
+│   ├── FrmLogin.cs
+│   ├── FrmMain.cs
+│   ├── FrmKorisnici.cs
+│   ├── FrmPredmeti.cs
+│   ├── FrmLekcije.cs
+│   └── FrmUpisi.cs
+│
+├── Models
+│   ├── Korisnik.cs
+│   ├── Predmet.cs
+│   ├── Lekcija.cs
+│   └── UpisNaPredmet.cs
+│
+├── Data
+│   ├── Database.cs
+│   ├── KorisnikRepository.cs
+│   ├── PredmetRepository.cs
+│   ├── LekcijaRepository.cs
+│   └── UpisRepository.cs
+│
+├── Helpers
+│   ├── ValidationHelper.cs
+│   └── FormHelper.cs
+│
+└── Program.cs
