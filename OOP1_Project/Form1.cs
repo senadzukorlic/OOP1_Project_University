@@ -54,6 +54,13 @@ namespace OOP1_Project
                     );
 
                     lblStatus.Text = "Uspješna prijava.";
+
+                    FrmMain frmMain = new FrmMain(korisnik);
+                    this.Hide();
+                    frmMain.ShowDialog();
+                    this.Show();
+
+                    OcistiPolja();
                 }
                 else
                 {
