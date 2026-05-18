@@ -48,7 +48,8 @@ namespace OOP1_Project
 
         private void btnKorisnici_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ovdje ćemo otvoriti formu za korisnike.", "MiniMoodle");
+            FrmKorisnici frmKorisnici = new FrmKorisnici();
+            frmKorisnici.ShowDialog();
         }
 
         private void btnPredmeti_Click(object sender, EventArgs e)
@@ -88,7 +89,7 @@ namespace OOP1_Project
             this.lblNaslov.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.lblNaslov.Location = new System.Drawing.Point(210, 25);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(478, 52);
+            this.lblNaslov.Size = new System.Drawing.Size(605, 65);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "MiniMoodle Admin Panel";
             // 
@@ -98,23 +99,23 @@ namespace OOP1_Project
             this.lblKorisnik.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblKorisnik.Location = new System.Drawing.Point(27, 67);
             this.lblKorisnik.Name = "lblKorisnik";
-            this.lblKorisnik.Size = new System.Drawing.Size(0, 37);
+            this.lblKorisnik.Size = new System.Drawing.Size(0, 41);
             this.lblKorisnik.TabIndex = 1;
             // 
             // btnKorisnici
             // 
-            this.btnKorisnici.Location = new System.Drawing.Point(490, 352);
+            this.btnKorisnici.Location = new System.Drawing.Point(55, 330);
             this.btnKorisnici.Name = "btnKorisnici";
-            this.btnKorisnici.Size = new System.Drawing.Size(100, 69);
+            this.btnKorisnici.Size = new System.Drawing.Size(119, 70);
             this.btnKorisnici.TabIndex = 3;
             this.btnKorisnici.Text = "Korisnici";
             this.btnKorisnici.UseVisualStyleBackColor = true;
             // 
             // btnPredmeti
             // 
-            this.btnPredmeti.Location = new System.Drawing.Point(34, 152);
+            this.btnPredmeti.Location = new System.Drawing.Point(51, 152);
             this.btnPredmeti.Name = "btnPredmeti";
-            this.btnPredmeti.Size = new System.Drawing.Size(111, 50);
+            this.btnPredmeti.Size = new System.Drawing.Size(123, 46);
             this.btnPredmeti.TabIndex = 4;
             this.btnPredmeti.Text = "Predmeti";
             this.btnPredmeti.UseVisualStyleBackColor = true;
@@ -122,25 +123,25 @@ namespace OOP1_Project
             // 
             // btnLekcije
             // 
-            this.btnLekcije.Location = new System.Drawing.Point(355, 326);
+            this.btnLekcije.Location = new System.Drawing.Point(51, 222);
             this.btnLekcije.Name = "btnLekcije";
-            this.btnLekcije.Size = new System.Drawing.Size(92, 57);
+            this.btnLekcije.Size = new System.Drawing.Size(104, 74);
             this.btnLekcije.TabIndex = 5;
             this.btnLekcije.Text = "Lekcije";
             this.btnLekcije.UseVisualStyleBackColor = true;
             // 
             // btnUpisi
             // 
-            this.btnUpisi.Location = new System.Drawing.Point(638, 296);
+            this.btnUpisi.Location = new System.Drawing.Point(63, 446);
             this.btnUpisi.Name = "btnUpisi";
-            this.btnUpisi.Size = new System.Drawing.Size(111, 53);
+            this.btnUpisi.Size = new System.Drawing.Size(111, 55);
             this.btnUpisi.TabIndex = 6;
             this.btnUpisi.Text = " Upisi";
             this.btnUpisi.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(302, 196);
+            this.btnLogout.Location = new System.Drawing.Point(638, 156);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(105, 42);
             this.btnLogout.TabIndex = 7;
@@ -149,7 +150,7 @@ namespace OOP1_Project
             // 
             // FrmMain
             // 
-            this.ClientSize = new System.Drawing.Size(621, 339);
+            this.ClientSize = new System.Drawing.Size(2822, 1251);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnUpisi);
             this.Controls.Add(this.btnLekcije);

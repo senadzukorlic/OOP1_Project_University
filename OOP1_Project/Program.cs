@@ -14,8 +14,7 @@ namespace OOP1_Project
         [STAThread]
         static void Main()
         {
-            Console.WriteLine("Esselamu alejkum");
-            Console.ReadLine();
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
