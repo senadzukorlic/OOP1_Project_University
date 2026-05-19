@@ -54,7 +54,8 @@ namespace OOP1_Project
 
         private void btnPredmeti_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ovdje ćemo otvoriti formu za predmete.", "MiniMoodle");
+            FrmPredmeti frmPredmeti = new FrmPredmeti();
+            frmPredmeti.ShowDialog();
         }
 
         private void btnLekcije_Click(object sender, EventArgs e)

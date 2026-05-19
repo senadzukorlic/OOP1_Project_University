@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\KorisnikRepository.cs" />
+    <Compile Include="Data\PredmetRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,7 +113,14 @@
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmPredmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPredmeti.Designer.cs">
+      <DependentUpon>FrmPredmeti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\Predmet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -123,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPredmeti.resx">
+      <DependentUpon>FrmPredmeti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
