@@ -60,7 +60,8 @@ namespace OOP1_Project
 
         private void btnLekcije_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ovdje ćemo otvoriti formu za lekcije.", "MiniMoodle");
+            FrmLekcije frmLekcije = new FrmLekcije();
+            frmLekcije.ShowDialog();
         }
 
         private void btnUpisi_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace OOP1_Project
             this.lblNaslov.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.lblNaslov.Location = new System.Drawing.Point(210, 25);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(605, 65);
+            this.lblNaslov.Size = new System.Drawing.Size(344, 37);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "MiniMoodle Admin Panel";
             // 
@@ -100,7 +101,7 @@ namespace OOP1_Project
             this.lblKorisnik.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblKorisnik.Location = new System.Drawing.Point(27, 67);
             this.lblKorisnik.Name = "lblKorisnik";
-            this.lblKorisnik.Size = new System.Drawing.Size(0, 41);
+            this.lblKorisnik.Size = new System.Drawing.Size(0, 23);
             this.lblKorisnik.TabIndex = 1;
             // 
             // btnKorisnici
@@ -151,7 +152,7 @@ namespace OOP1_Project
             // 
             // FrmMain
             // 
-            this.ClientSize = new System.Drawing.Size(2822, 1251);
+            this.ClientSize = new System.Drawing.Size(1482, 753);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnUpisi);
             this.Controls.Add(this.btnLekcije);

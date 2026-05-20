@@ -35,13 +35,15 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(518, 45);
+            this.txtEmail.Location = new System.Drawing.Point(475, 47);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(1217, 31);
+            this.txtEmail.Size = new System.Drawing.Size(468, 29);
             this.txtEmail.TabIndex = 0;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -53,17 +55,17 @@
             // 
             // txtLozinka
             // 
-            this.txtLozinka.Location = new System.Drawing.Point(579, 107);
+            this.txtLozinka.Location = new System.Drawing.Point(475, 106);
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.PasswordChar = '*';
-            this.txtLozinka.Size = new System.Drawing.Size(342, 31);
+            this.txtLozinka.Size = new System.Drawing.Size(314, 29);
             this.txtLozinka.TabIndex = 2;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(320, 205);
+            this.btnLogin.Location = new System.Drawing.Point(293, 197);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(128, 61);
+            this.btnLogin.Size = new System.Drawing.Size(117, 59);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -71,9 +73,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(1231, 253);
+            this.btnClear.Location = new System.Drawing.Point(1128, 243);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(188, 45);
+            this.btnClear.Size = new System.Drawing.Size(172, 43);
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -81,16 +83,38 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(24, 24);
+            this.lblStatus.Location = new System.Drawing.Point(22, 23);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(0, 25);
             this.lblStatus.TabIndex = 5;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(288, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "E-mail";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(288, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Password";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2711, 1164);
+            this.ClientSize = new System.Drawing.Size(1764, 1013);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnLogin);
@@ -114,6 +138,8 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

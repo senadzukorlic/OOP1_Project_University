@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\KorisnikRepository.cs" />
+    <Compile Include="Data\LekcijaRepository.cs" />
     <Compile Include="Data\PredmetRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -110,6 +111,12 @@
     <Compile Include="FrmKorisnici.Designer.cs">
       <DependentUpon>FrmKorisnici.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLekcije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLekcije.Designer.cs">
+      <DependentUpon>FrmLekcije.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +127,7 @@
       <DependentUpon>FrmPredmeti.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\Lekcija.cs" />
     <Compile Include="Models\Predmet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmKorisnici.resx">
       <DependentUpon>FrmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLekcije.resx">
+      <DependentUpon>FrmLekcije.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
